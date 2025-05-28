@@ -1,0 +1,95 @@
+export type Dictionary = {
+    navigation: {
+        home: string;
+        menu: string;
+        about: string;
+        contact: string;
+    };
+    common: {
+        seeMenu: string;
+        orderOnline: string;
+        reserveTable: string;
+        findUs: string;
+        viewFullMenu: string;
+        bookTable: string;
+        orderNow: string;
+        allRightsReserved: string;
+        quickLinks: string;
+        information: string;
+        hours: string;
+        openEveryDay: string;
+        friday: string;
+        address: string;
+        phone: string;
+        email: string;
+        openingHours: string;
+        reservations: string;
+        onlineOrder: string;
+    };
+    home: {
+        welcome: string;
+        ourHistory: string;
+        ourHistoryTitle: string;
+        ourHistoryDescription: string;
+        ourPride: string;
+        ourPrideTitle: string;
+        ourPrideDescription: string;
+        achahada: string;
+        ourSpecialties: string;
+        ourSpecialtiesTitle: string;
+        pastaTitle: string;
+        pastaDescription: string;
+        glutenFree: string;
+        pizzaTitle: string;
+        pizzaDescription: string;
+        dessertTitle: string;
+        dessertDescription: string;
+        ourSecrets: string;
+        secretsTitle: string;
+        secretsDescription1: string;
+        secretsDescription2: string;
+        hoursTitle: string;
+        hoursEveryDay: string;
+        hoursTime: string;
+        hoursFriday: string;
+    };
+    about: {
+        title: string;
+        passionTitle: string;
+        passionDescription: string;
+        convivialTitle: string;
+        convivialDescription1: string;
+        convivialDescription2: string;
+        knowHowTitle: string;
+        knowHowDescription1: string;
+        knowHowDescription2: string;
+        commitmentTitle: string;
+        commitmentDescription1: string;
+        commitmentDescription2: string;
+    };
+    contact: {
+        title: string;
+        contactInfo: string;
+        address: string;
+        addressValue: string;
+        phone: string;
+        phoneValue: string;
+        email: string;
+        emailValue: string;
+        openingHours: string;
+        everyDay: string;
+        hoursEveryDay: string;
+        friday: string;
+        hoursFriday: string;
+        reservations: string;
+        reservationHours: string;
+        reserveTable: string;
+        onlineOrder: string;
+        onlineOrderDescription: string;
+        orderNow: string;
+        ourLocation: string;
+    };
+    menu: {
+        title: string;
+    };
+}

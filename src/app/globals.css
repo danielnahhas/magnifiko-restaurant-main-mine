@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-allura: var(--font-allura);
+  --font-merriweather: var(--font-merriweather);
+  --font-garamond: var(--font-garamond);
+  --color-primaryBeige: #F5F5DC;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-garamond);
+}
+
+.container {
+  max-width: 1350px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.dark-overlay {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7), transparent);
+}
+
+.drawer-icon:before, .drawer-icon:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  inset-inline: 0;
+}
+
+.drawer-icon:before {
+  top: 2;
+  right: 0;
+  left: 0;
+}
+
+.drawer-icon:after {
+  top: 14px;
+  left: 8px;
+}
+
+.drawer-icon.open:before {
+  top: 2;
+  rotate: 45deg;
+}
+
+.drawer-icon.open:after {
+  top: 2;
+  left: 0;
+  rotate: -45deg;
+}
+
+.drawer-icon.open:before,
+.drawer-icon.open:after,
+.drawer-icon.scrolling:before,
+.drawer-icon.scrolling:after {
+  background-color: black;
+}
+
+dialog::backdrop {
+  backdrop-filter: brightness(0.3);
+}
